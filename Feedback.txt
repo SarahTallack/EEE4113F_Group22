@@ -1,0 +1,22 @@
+What you considered, why you considered it
+Choices that you've made
+Document all design choices for report
+
+-load cell is temp dependent
+-need temperature sensor for calibration purposes (?)
+
+-Pi 0 vs ESP32 - S
+
+18650 batteries 
+-charging circuitry
+-no over discharging
+-battery temperature monitoring
+
+-ask Ben if he wants to use PC or mobile for connection
+
+-humidity/temperature/light (ask Ben) (possibly internal and external)
+
+-measure power draw of Pi vs ESP32
+
+-place to name bird
+
