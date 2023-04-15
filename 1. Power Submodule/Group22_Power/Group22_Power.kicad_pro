@@ -320,6 +320,14 @@
     [
       "75b1c0b0-8972-4b9b-9120-d3956048250b",
       ""
+    ],
+    [
+      "ba90ddbb-a325-41f6-b0d8-c98df51ea380",
+      "VoltageSupply"
+    ],
+    [
+      "981e87c2-b7df-4e8d-bf8b-91f3858a9d6f",
+      "Sensors"
     ]
   ],
   "text_variables": {}

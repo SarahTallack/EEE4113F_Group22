@@ -1,0 +1,33 @@
+Charger Circuitry
+- Buying a charger vs designing one using a charging IC (TP4056) and implementing protection circuitry
+- Might be cheaper to just buy a charger
+- Less risk of it not working
+- Less involved
+- Why do all the work if someone else has already done it all for you
+
+Battery levels
+- Input: 2*3.7V = 7.4V (18650 Lithium Ions)
+
+PCB
+-ask Justin about best way to populate to have two 18650s on board
+-ask Justin the best way to supply power to load cells and HX711
+
+Voltage regulator
+-determine how much current we need worst case
+-https://jlcpcb.com/partdetail/Onsemi-MC78M05CDTRKG/C20719
+-https://jlcpcb.com/partdetail/9591-CJ78M05/C9070
+
+Temperature Sensors
+- http://www.aosong.com/userfiles/files/media/Data%20Sheet%20AHT21.pdf
+C2827328
+No sleep mode/ not as much information on power consumption + highest power consumption
+
+- https://datasheet.lcsc.com/lcsc/2106070104_Sensirion-SHT30-DIS-B10KS_C2687423.pdf
+C2687423 *****
+Better power consumption v above, but no sleep mode
+Package type has more temp/humidity sensors also in stock of similar price should this one not be in stock (at least two alternative with >4000 in stock)
+
+- file:///C:/Users/sarah/Downloads/SHTC3-10000.pdf
+C2880044
+Has sleep mode + good power consumption
+Only one other temp/humidity sensor of same package type available of JLC (and the alternative has <10 in stock at time of writing this)
