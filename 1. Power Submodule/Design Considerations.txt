@@ -8,12 +8,18 @@ Charger Circuitry
 Battery levels
 - Input: 2*3.7V = 7.4V (18650 Lithium Ions)
 
+Battery Protection (Under/Over Voltage Protection)
+-https://forum.digikey.com/t/simple-undervoltage-and-overcurrent-protection-for-lithium-ion-and-lithium-polymer-batteries/13123
+
 PCB
 -ask Justin about best way to populate to have two 18650s on board
 -ask Justin the best way to supply power to load cells and HX711
 
 Voltage regulator
 -determine how much current we need worst case
+-5V regulator chose 500mA because uC will use max 400mA and HX711 uses about 2mA
+-3.3V regulator only needs to supply sensors so 100mA is more than enough
+
 -https://jlcpcb.com/partdetail/Onsemi-MC78M05CDTRKG/C20719
 -https://jlcpcb.com/partdetail/9591-CJ78M05/C9070
 
