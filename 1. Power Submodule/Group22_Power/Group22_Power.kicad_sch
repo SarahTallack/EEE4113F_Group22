@@ -436,5 +436,8 @@
     (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/0a0ff7d9-48c5-4e44-864a-fbad264b76be"
       (reference "U4") (unit 1) (value "SHT30-DIS") (footprint "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm")
     )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/f8d00e5c-bc66-4ba7-b7ab-0d55e706d188"
+      (reference "U?") (unit 1) (value "TPS63030DSKR") (footprint "Package_SON:WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm")
+    )
   )
 )
