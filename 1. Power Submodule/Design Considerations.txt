@@ -7,6 +7,9 @@ Charger Circuitry
 
 Battery levels
 - Input: 2*3.7V = 7.4V (18650 Lithium Ions)
+- Two batteries in parallel (3V to 4.2V) (2000mAh capacity * 2)
+- Use a boost converter to get 5V output instead of a linear regulator
+- linear regulator to get 3v3 output from 5V
 
 Battery Protection (Under/Over Voltage Protection)
 -https://forum.digikey.com/t/simple-undervoltage-and-overcurrent-protection-for-lithium-ion-and-lithium-polymer-batteries/13123

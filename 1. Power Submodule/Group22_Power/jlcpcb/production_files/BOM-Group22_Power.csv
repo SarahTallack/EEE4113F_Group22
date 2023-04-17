@@ -1,0 +1,22 @@
+Comment,Designator,Footprint,LCSC
+NCE30P30K,Q2,TO-252-2,C130106
+82k,R3,R_0805_2012Metric,C17840
+LN61C,U3,SOT-23,C236739
+100k,R2,R_0402_1005Metric,C25741
+10k,"R4,R5",R_0402_1005Metric,C25744
+330k,R1,R_0402_1005Metric,C25778
+4.7u,C4,C_1206_3216Metric,C29823
+Conn_01x02_Male,"J1,J2,J3",PinHeader_1x02_P2.54mm_Vertical,C492401
+100n,"C1,C2,C3",C_0603_1608Metric,C49678
+XC6206,U2,SOT-23,C5148692
+L78M,U1,TO-252-2,C58069
+SHT30-DIS,U4,Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm,C77361
+2N7002,Q1,SOT-23,C8545
+TestPoint,TP6,TestPoint_Pad_D2.0mm,
+TestPoint,TP5,TestPoint_Pad_D2.0mm,
+TestPoint,TP4,TestPoint_Pad_D2.0mm,
+TestPoint,TP3,TestPoint_Pad_D2.0mm,
+TestPoint,TP2,TestPoint_Pad_D2.0mm,
+TestPoint,TP1,TestPoint_Pad_D2.0mm,
+Li-Ion Battery,BT2,BatteryHolder_Keystone_1042_1x18650,
+Li-Ion Battery,BT1,BatteryHolder_Keystone_1042_1x18650,

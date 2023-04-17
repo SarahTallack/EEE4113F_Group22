@@ -91,10 +91,6 @@
   )
 
 
-  (wire (pts (xy 66.675 158.115) (xy 80.645 158.115))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 4b21a4a7-77f6-4b88-b452-c2850fc330af)
-  )
   (polyline (pts (xy 234.315 165.735) (xy 237.49 165.735))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 4cc797be-c583-45c6-81e4-93732f2a94fb)
@@ -108,7 +104,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 7609d00b-7ea6-4dc0-b4f7-42728bfff08b)
   )
-  (wire (pts (xy 77.47 137.16) (xy 81.28 137.16))
+  (wire (pts (xy 71.12 137.16) (xy 81.28 137.16))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 7ebfafd9-8b72-4ae6-bfe5-eeccba2455a9)
   )
@@ -120,6 +116,10 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 8747eee2-b1a3-496b-8e52-60d6e33aea43)
   )
+  (wire (pts (xy 67.31 157.48) (xy 82.55 157.48))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid cde0094d-9485-4119-9df9-091adc3c58b3)
+  )
   (wire (pts (xy 71.755 163.83) (xy 71.755 165.1))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid f5becfa3-a758-4ee0-b2c2-528aad742e8b)
@@ -128,6 +128,11 @@
   (text "Testpoints" (at 59.055 131.445 0)
     (effects (font (size 2.0066 2.0066) (thickness 0.4013) bold) (justify left bottom))
     (uuid a5fb3790-5204-41ea-9e2f-16b06677d6e2)
+  )
+
+  (label "Bat+" (at 67.31 157.48 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 343a3ead-ff0d-4cc4-b3e8-aaa1067e3858)
   )
 
   (global_label "+5VREG" (shape input) (at 71.12 151.13 180) (fields_autoplaced)
@@ -151,23 +156,18 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "Bat (Protected)" (shape input) (at 77.47 137.16 180) (fields_autoplaced)
+  (global_label "Bat (Protected)" (shape input) (at 71.12 137.16 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid f5583ec7-0354-4224-814f-3b2cd81fc69b)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 60.1798 137.2394 0)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 53.8298 137.2394 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
-  )
-
-  (hierarchical_label "BAT+" (shape input) (at 66.675 158.115 180)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid e3382685-140f-4dae-b210-e9c040ff8713)
   )
 
   (symbol (lib_id "Connector:TestPoint") (at 81.28 137.16 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 01e30b4a-9f26-4a75-98c5-30a69a2cd4de)
-    (property "Reference" "TP?" (id 0) (at 86.995 135.8899 90)
+    (property "Reference" "TP2" (id 0) (at 86.995 135.8899 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (id 1) (at 86.995 138.4299 90)
@@ -185,7 +185,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 80.645 163.83 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 136d1b98-7e38-4830-ba9f-7d4a401a13da)
-    (property "Reference" "TP?" (id 0) (at 86.36 162.5599 90)
+    (property "Reference" "TP1" (id 0) (at 86.36 162.5599 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (id 1) (at 86.36 165.0999 90)
@@ -203,7 +203,7 @@
   (symbol (lib_id "power:GND") (at 71.755 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 7e38cb89-a8cb-4b6b-a4f8-30efe48c9d8e)
-    (property "Reference" "#PWR?" (id 0) (at 71.755 171.45 0)
+    (property "Reference" "#PWR0101" (id 0) (at 71.755 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 71.755 170.18 0))
@@ -216,19 +216,19 @@
     (pin "1" (uuid d6372b44-0b0c-4419-9b18-07d148eac04e))
   )
 
-  (symbol (lib_id "Connector:TestPoint") (at 80.645 158.115 270) (unit 1)
+  (symbol (lib_id "Connector:TestPoint") (at 82.55 157.48 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid bdca4190-7315-44f5-be38-8d64df72dec0)
-    (property "Reference" "TP?" (id 0) (at 86.36 156.8449 90)
+    (property "Reference" "TP6" (id 0) (at 88.265 156.2099 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TestPoint" (id 1) (at 86.36 159.3849 90)
+    (property "Value" "TestPoint" (id 1) (at 88.265 158.7499 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 80.645 163.195 0)
+    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 82.55 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (id 3) (at 80.645 163.195 0)
+    (property "Datasheet" "~" (id 3) (at 82.55 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid aaf2bcad-a499-4176-9d76-49541b047b70))
@@ -237,7 +237,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 81.28 151.13 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid bed859c1-79d1-431d-8430-6c1171048f0f)
-    (property "Reference" "TP?" (id 0) (at 86.995 149.8599 90)
+    (property "Reference" "TP5" (id 0) (at 86.995 149.8599 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (id 1) (at 86.995 152.3999 90)
@@ -255,7 +255,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 81.28 146.685 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid d670edea-3149-4221-8301-6f67a6abe324)
-    (property "Reference" "TP?" (id 0) (at 86.995 145.4149 90)
+    (property "Reference" "TP4" (id 0) (at 86.995 145.4149 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (id 1) (at 86.995 147.9549 90)
@@ -273,7 +273,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 81.28 142.24 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid faf22fdc-9e02-4ec2-89cb-298aa5fdd5f3)
-    (property "Reference" "TP?" (id 0) (at 86.995 140.9699 90)
+    (property "Reference" "TP3" (id 0) (at 86.995 140.9699 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (id 1) (at 86.995 143.5099 90)
@@ -310,10 +310,6 @@
     (property "Sheet file" "VoltageSupply.kicad_sch" (id 1) (at 67.31 114.8846 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "BAT+" input (at 107.95 107.315 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 71398c77-8572-4e10-8d11-37d4208fabf5)
-    )
   )
 
   (sheet_instances
@@ -323,122 +319,122 @@
   )
 
   (symbol_instances
-    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/04786359-aaa8-4373-94c3-fa9fad250d3e"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/62df17c4-3123-4896-a16b-d9c295a15fee"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
     (path "/7e38cb89-a8cb-4b6b-a4f8-30efe48c9d8e"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/8d6d3835-c3f2-49ba-8734-2d047f1828fb"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/982f84ae-47e5-4fd9-a9be-14d67166ac27"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/9ce7d0da-35e3-40ba-b4d8-e3757a9f675d"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/b2f78d3e-9c2a-49ef-88df-571ee0fe8b91"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/b5ca58b5-3e00-4f13-81b6-8002d15e06ad"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/62df17c4-3123-4896-a16b-d9c295a15fee"
+      (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/c341da05-6a33-4f59-a518-6c3562d778f2"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0104") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/8d6d3835-c3f2-49ba-8734-2d047f1828fb"
+      (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/b2f78d3e-9c2a-49ef-88df-571ee0fe8b91"
+      (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/ce39ddfd-7976-4151-87a8-8cb3460c8c08"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/d42bb355-d417-489c-9c06-d5591b2085c6"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/ff18062c-e585-484f-89dc-9ab747ac9cf8"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0108") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/982f84ae-47e5-4fd9-a9be-14d67166ac27"
+      (reference "#PWR0109") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/9ce7d0da-35e3-40ba-b4d8-e3757a9f675d"
+      (reference "#PWR0110") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/d42bb355-d417-489c-9c06-d5591b2085c6"
+      (reference "#PWR0111") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/04786359-aaa8-4373-94c3-fa9fad250d3e"
+      (reference "#PWR0112") (unit 1) (value "GND") (footprint "")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/5266cd40-bc21-4387-8542-a1e0abf5fe9b"
-      (reference "BT?") (unit 1) (value "Li-Ion Battery") (footprint "Battery:BatteryHolder_Keystone_1042_1x18650")
+      (reference "BT1") (unit 1) (value "Li-Ion Battery") (footprint "Battery:BatteryHolder_Keystone_1042_1x18650")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/affc5cb4-e803-4042-bd42-b811a85bb331"
-      (reference "BT?") (unit 1) (value "Li-Ion Battery") (footprint "Battery:BatteryHolder_Keystone_1042_1x18650")
-    )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/37ad02bc-6583-40d7-bfd4-0fccea7b6dd7"
-      (reference "C?") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "BT2") (unit 1) (value "Li-Ion Battery") (footprint "Battery:BatteryHolder_Keystone_1042_1x18650")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/523c304d-a582-4843-bb4a-26405d544ebb"
-      (reference "C?") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C1") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/9822f50c-63c1-47a6-a4de-5ef920bd8814"
-      (reference "C?") (unit 1) (value "4.7u") (footprint "Capacitor_SMD:C_1206_3216Metric")
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/37ad02bc-6583-40d7-bfd4-0fccea7b6dd7"
+      (reference "C2") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/aa315501-8985-4f50-993e-d2a92acb69d5"
-      (reference "C?") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C3") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/9822f50c-63c1-47a6-a4de-5ef920bd8814"
+      (reference "C4") (unit 1) (value "4.7u") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/65fa921d-72ac-4914-ba3f-3167ee588b00"
-      (reference "D?") (unit 1) (value "Diode") (footprint "Project_Library:Schottky Diode")
-    )
-    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/37fb92a3-23dd-49be-a90e-8b9825c7c06b"
-      (reference "J?") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
-    )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/9b4abebb-cd1f-468c-ae5e-004b19b4ac21"
-      (reference "J?") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+      (reference "D1") (unit 1) (value "Diode") (footprint "Project_Library:Schottky Diode")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/c6ac832d-338e-49e9-a749-70fe953af321"
-      (reference "J?") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+      (reference "J1") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/9b4abebb-cd1f-468c-ae5e-004b19b4ac21"
+      (reference "J2") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/37fb92a3-23dd-49be-a90e-8b9825c7c06b"
+      (reference "J3") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/5232d110-1e6a-420b-a21a-2ef114bbc132"
-      (reference "Q?") (unit 1) (value "2N7002") (footprint "Package_TO_SOT_SMD:SOT-23")
+      (reference "Q1") (unit 1) (value "2N7002") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/e35fb9d5-1b2a-44be-a071-87642b610268"
-      (reference "Q?") (unit 1) (value "NCE30P30K") (footprint "Package_TO_SOT_SMD:TO-252-2")
-    )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/2f1300f9-9ffc-4055-bae2-d9bbb5ab5ebf"
-      (reference "R?") (unit 1) (value "82k") (footprint "Resistor_SMD:R_0805_2012Metric")
-    )
-    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/6142aa12-33d6-4653-8db1-0ba1cf17f3c0"
-      (reference "R?") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/7679c901-6bf6-4ba5-bf5e-179919a224a7"
-      (reference "R?") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "Q2") (unit 1) (value "NCE30P30K") (footprint "Package_TO_SOT_SMD:TO-252-2")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/8a1d4eeb-223b-47d4-87bc-21a08690c900"
-      (reference "R?") (unit 1) (value "330k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R1") (unit 1) (value "330k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/7679c901-6bf6-4ba5-bf5e-179919a224a7"
+      (reference "R2") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/2f1300f9-9ffc-4055-bae2-d9bbb5ab5ebf"
+      (reference "R3") (unit 1) (value "82k") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/6142aa12-33d6-4653-8db1-0ba1cf17f3c0"
+      (reference "R4") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/b6dc2e9e-dc6f-4cc2-bef2-0dcf8e7c739b"
-      (reference "R?") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
-    (path "/01e30b4a-9f26-4a75-98c5-30a69a2cd4de"
-      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+      (reference "R5") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/136d1b98-7e38-4830-ba9f-7d4a401a13da"
-      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+      (reference "TP1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
-    (path "/bdca4190-7315-44f5-be38-8d64df72dec0"
-      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
-    )
-    (path "/bed859c1-79d1-431d-8430-6c1171048f0f"
-      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
-    )
-    (path "/d670edea-3149-4221-8301-6f67a6abe324"
-      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    (path "/01e30b4a-9f26-4a75-98c5-30a69a2cd4de"
+      (reference "TP2") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
     (path "/faf22fdc-9e02-4ec2-89cb-298aa5fdd5f3"
-      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+      (reference "TP3") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
-    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/0a0ff7d9-48c5-4e44-864a-fbad264b76be"
-      (reference "U?") (unit 1) (value "SHT30-DIS") (footprint "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm")
+    (path "/d670edea-3149-4221-8301-6f67a6abe324"
+      (reference "TP4") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/4a12ae86-257a-4133-974c-c8c55838862f"
-      (reference "U?") (unit 1) (value "XC6206") (footprint "Package_TO_SOT_SMD:SOT-23")
+    (path "/bed859c1-79d1-431d-8430-6c1171048f0f"
+      (reference "TP5") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
+    (path "/bdca4190-7315-44f5-be38-8d64df72dec0"
+      (reference "TP6") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/81efe728-ae5e-45ab-88e5-6b9aa2c0510b"
-      (reference "U?") (unit 1) (value "L78M") (footprint "Package_TO_SOT_SMD:TO-252-2")
+      (reference "U1") (unit 1) (value "L78M") (footprint "Package_TO_SOT_SMD:TO-252-2")
+    )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/4a12ae86-257a-4133-974c-c8c55838862f"
+      (reference "U2") (unit 1) (value "XC6206") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/b8c8b322-ab5e-4b5d-bd40-ca2e0dae7e81"
-      (reference "U?") (unit 1) (value "LN61C") (footprint "Package_TO_SOT_SMD:SOT-23")
+      (reference "U3") (unit 1) (value "LN61C") (footprint "Package_TO_SOT_SMD:SOT-23")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/0a0ff7d9-48c5-4e44-864a-fbad264b76be"
+      (reference "U4") (unit 1) (value "SHT30-DIS") (footprint "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm")
     )
   )
 )
