@@ -5,6 +5,10 @@ Charger Circuitry
 - Less involved
 - Why do all the work if someone else has already done it all for you
 
+-made the charging circuitry
+-included a microUSB and USB type C adapter
+-TP4056 has overcharge protection (when the charging current .... stops charging)
+
 Battery levels
 - Input: 2*3.7V = 7.4V (18650 Lithium Ions)
 - Two batteries in parallel (3V to 4.2V) (2000mAh capacity * 2)
@@ -16,6 +20,9 @@ Battery Protection (Under/Over Voltage Protection)
 -Found this https://datasheet.lcsc.com/lcsc/2208151830_Microchip-Tech-TC54VC3002ECB713_C626560.pdf 
 which will force the output to logic low (off) when the input voltage drops below a predetermined value
 -Included a male header pins to bypass undervoltage protection, incase it doesn't work
+
+-have a switching circuit which I got from here https://ww1.microchip.com/downloads/en/Appnotes/01149c.pdf
+which is comes just after the Vusb/Bat+
 
 PCB
 -ask Justin about best way to populate to have two 18650s on board

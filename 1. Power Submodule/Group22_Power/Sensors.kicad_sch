@@ -101,7 +101,7 @@
         )
       )
     )
-    (symbol "Sensor_Humidity:SHT30-DIS" (in_bom yes) (on_board yes)
+    (symbol "SarahLib:SHT30-DIS" (in_bom yes) (on_board yes)
       (property "Reference" "U5" (id 0) (at 2.0194 10.16 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -327,12 +327,9 @@
     (uuid a5347327-2286-4e5f-a749-22472c0cf205)
   )
 
-  (global_label "+3V3Reg" (shape input) (at 208.915 125.73 180) (fields_autoplaced)
+  (hierarchical_label "+3V3Reg" (shape input) (at 208.915 125.73 180)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 9a968809-86aa-4edc-add2-bc672b58e668)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 197.9143 125.6506 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
+    (uuid afe24249-e939-4163-be1f-02c7c920be69)
   )
 
   (symbol (lib_id "power:GND") (at 217.17 153.67 0) (unit 1)
@@ -351,7 +348,7 @@
     (pin "1" (uuid b5dfc7be-36b2-4097-9a36-1c47e4816baf))
   )
 
-  (symbol (lib_id "Sensor_Humidity:SHT30-DIS") (at 217.17 146.05 0) (unit 1)
+  (symbol (lib_id "SarahLib:SHT30-DIS") (at 217.17 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 0a0ff7d9-48c5-4e44-864a-fbad264b76be)
     (property "Reference" "U5" (id 0) (at 219.1894 135.89 0)
