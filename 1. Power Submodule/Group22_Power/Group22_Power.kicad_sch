@@ -221,9 +221,6 @@
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/66bd812a-12cd-4ebe-9450-84df9efd8484"
       (reference "D4") (unit 1) (value "Diode") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/c6ac832d-338e-49e9-a749-70fe953af321"
-      (reference "J1") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
-    )
     (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/37fb92a3-23dd-49be-a90e-8b9825c7c06b"
       (reference "J2") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
@@ -235,9 +232,6 @@
     )
     (path "/25c21d3e-5539-424b-aeca-1e421b112902/145d1cd9-37f2-4d29-af5b-5a67c82f40a4"
       (reference "J5") (unit 1) (value "Conn_01x08_Male") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical")
-    )
-    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/e25f0850-0261-4580-9b95-95152bd070ba"
-      (reference "J6") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/25c21d3e-5539-424b-aeca-1e421b112902/c2070f7d-1589-4127-ae91-e4c0cda58454"
       (reference "J7") (unit 1) (value "GPIO") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical")
@@ -268,6 +262,12 @@
     )
     (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/b1bd47bf-2a6c-4c5e-b291-01b7d114af30"
       (reference "J16") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/0081de53-ca55-495b-9a2d-5c4dc243ab4f"
+      (reference "JP1") (unit 1) (value "Jumper_2_Open") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+    )
+    (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/e42b8a55-69a9-4e34-a3c1-d9202b5b7fde"
+      (reference "JP2") (unit 1) (value "Jumper_2_Open") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/71b69848-cede-4bf0-ae90-84577be9c364"
       (reference "L1") (unit 1) (value "4.7u") (footprint "SarahFootprints:IND-SMD_L4.0-W4.0")

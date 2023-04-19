@@ -18,7 +18,7 @@ YLED,D2,LED_0805_2012Metric,C2296
 USB_C_Receptacle,J8,USB-TYPE-C-TH_USB-306A-B-SU,C309339
 USB_Micro_B_Female_Connector,J3,C404969_Micro_USB,C404969
 20k,R3,R_0603_1608Metric,C4184
-Conn_01x02_Male,"J1,J2",PinHeader_1x02_P2.54mm_Vertical,C492401
+Conn_01x02_Male,J2,PinHeader_1x02_P2.54mm_Vertical,C492401
 100n,"C2,C3,C4,C6,C7",C_0603_1608Metric,C49678
 330m,R4,R_0805_2012Metric,C52548
 TPS63030DSKR,U1,WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm,C60707
@@ -41,7 +41,8 @@ Conn_01x02_Male,J11,PinHeader_1x02_P2.54mm_Vertical,
 Conn_01x02_Male,J13,PinHeader_1x02_P2.54mm_Vertical,
 Conn_01x02_Male,J9,PinHeader_1x02_P2.54mm_Vertical,
 Conn_01x02_Male,J10,PinHeader_1x02_P2.54mm_Vertical,
-Conn_01x02_Male,J6,PinHeader_1x02_P2.54mm_Vertical,
 Conn_01x08_Male,J4,PinSocket_1x08_P2.54mm_Vertical,
 GPIO,J7,PinSocket_2x20_P2.54mm_Vertical,
 Conn_01x08_Male,J5,PinSocket_1x08_P2.54mm_Vertical,
+Jumper_2_Open,JP2,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,
+Jumper_2_Open,JP1,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,
