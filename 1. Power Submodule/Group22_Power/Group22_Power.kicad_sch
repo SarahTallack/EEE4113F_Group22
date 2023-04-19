@@ -15,19 +15,38 @@
   (lib_symbols
   )
 
+  (junction (at 103.505 81.28) (diameter 0) (color 0 0 0 0)
+    (uuid 84561a3d-f570-4f84-8f58-4568e94bfbbb)
+  )
 
+  (wire (pts (xy 114.935 81.28) (xy 103.505 81.28))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 04e1dae8-30ef-4028-83a6-90f221c1c768)
+  )
   (polyline (pts (xy 234.315 165.735) (xy 237.49 165.735))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 4cc797be-c583-45c6-81e4-93732f2a94fb)
   )
 
-  (wire (pts (xy 103.505 75.565) (xy 103.505 86.36))
+  (wire (pts (xy 127 98.425) (xy 114.935 98.425))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 6fbda093-787d-4f1e-ac41-49408b58c14d)
+  )
+  (wire (pts (xy 103.505 81.28) (xy 103.505 86.36))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid b28edf8d-afbb-4a74-bcaa-8122d7162c2e)
+  )
+  (wire (pts (xy 103.505 75.565) (xy 103.505 81.28))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid c8b0d452-a224-49b3-84bf-2e743b16c1d5)
   )
   (wire (pts (xy 107.95 102.87) (xy 127 102.87))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid f3f4bdba-34ae-4322-ac8c-cc9d94afefa2)
+  )
+  (wire (pts (xy 114.935 98.425) (xy 114.935 81.28))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid fa52804c-0479-4b2d-b538-eaff202baa5a)
   )
 
   (sheet (at 67.31 50.8) (size 40.64 24.765) (fields_autoplaced)
@@ -59,6 +78,10 @@
     (pin "+3V3Reg" input (at 127 102.87 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid cf2e96a7-df60-4209-9407-860a561a7219)
+    )
+    (pin "+5VReg" input (at 127 98.425 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 959c170a-f9a1-44f6-a195-d3795165486c)
     )
   )
 
@@ -126,13 +149,19 @@
     (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/04786359-aaa8-4373-94c3-fa9fad250d3e"
       (reference "#PWR012") (unit 1) (value "GND") (footprint "")
     )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/3317a310-209c-49e8-b997-f0255ea54b3c"
+      (reference "#PWR013") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/a18970da-c8cd-4243-a5e9-f220f5f3d447"
+      (reference "#PWR014") (unit 1) (value "GND") (footprint "")
+    )
     (path "/25c21d3e-5539-424b-aeca-1e421b112902/cd7642ec-7558-4170-a8d2-15bfb2fa23ef"
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
     )
     (path "/25c21d3e-5539-424b-aeca-1e421b112902/c72027ab-731a-4d7c-84a3-ab8c4acd73e6"
       (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
     )
-    (path "/25c21d3e-5539-424b-aeca-1e421b112902/dbc8d6b8-5efc-4929-9606-db2d0f056224"
+    (path "/25c21d3e-5539-424b-aeca-1e421b112902/f44a6c29-bdd2-4031-b99f-073451bd7cbf"
       (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
     )
     (path "/25c21d3e-5539-424b-aeca-1e421b112902/f1b2945d-567f-4a0a-97e6-aae03cbf671e"
@@ -202,10 +231,10 @@
       (reference "J3") (unit 1) (value "USB_Micro_B_Female_Connector") (footprint "SarahFootprints:C404969_Micro_USB")
     )
     (path "/25c21d3e-5539-424b-aeca-1e421b112902/a5f95e0a-c498-42ec-82ae-ff42c3ee7d34"
-      (reference "J4") (unit 1) (value "Conn_01x08_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
+      (reference "J4") (unit 1) (value "Conn_01x08_Male") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical")
     )
     (path "/25c21d3e-5539-424b-aeca-1e421b112902/145d1cd9-37f2-4d29-af5b-5a67c82f40a4"
-      (reference "J5") (unit 1) (value "Conn_01x08_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
+      (reference "J5") (unit 1) (value "Conn_01x08_Male") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/e25f0850-0261-4580-9b95-95152bd070ba"
       (reference "J6") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
@@ -215,6 +244,30 @@
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/e11993e4-4efd-4562-9b8c-f0575a917cb0"
       (reference "J8") (unit 1) (value "USB_C_Receptacle") (footprint "SarahFootprints:USB-TYPE-C-TH_USB-306A-B-SU")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/1164c112-ea40-4bf9-8e2b-eba1c5e2b11e"
+      (reference "J9") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/acf69557-b701-4817-b1c4-8524fb8d7853"
+      (reference "J10") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/7e32a5c0-f56a-4740-9491-ffda895f64ad"
+      (reference "J11") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/6e077d70-f55c-46c4-adc8-409a328ad7be"
+      (reference "J12") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/76f2eadb-2e97-4536-8b79-563c9debac88"
+      (reference "J13") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/798c85dc-137d-4284-9bef-70f3025c9041"
+      (reference "J14") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/d9e44749-02af-40b4-ac8d-3ff0eb081ad6"
+      (reference "J15") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/b1bd47bf-2a6c-4c5e-b291-01b7d114af30"
+      (reference "J16") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/71b69848-cede-4bf0-ae90-84577be9c364"
       (reference "L1") (unit 1) (value "4.7u") (footprint "SarahFootprints:IND-SMD_L4.0-W4.0")

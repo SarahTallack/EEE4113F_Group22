@@ -3,11 +3,12 @@ Charger Circuitry
 - Might be cheaper to just buy a charger
 - Less risk of it not working
 - Less involved
-- Why do all the work if someone else has already done it all for you
 
 -made the charging circuitry
 -included a microUSB and USB type C adapter
 -TP4056 has overcharge protection (when the charging current .... stops charging)
+-for type c connection
+https://daumemo.com/wp-content/uploads/2019/12/BQ24295-schematic-for-battery-charging-scaled.png
 
 Battery levels
 - Input: 2*3.7V = 7.4V (18650 Lithium Ions)
