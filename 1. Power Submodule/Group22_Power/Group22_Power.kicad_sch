@@ -336,7 +336,7 @@
       (reference "TP7") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/f8d00e5c-bc66-4ba7-b7ab-0d55e706d188"
-      (reference "U1") (unit 1) (value "TPS63030DSKR") (footprint "Package_SON:WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm")
+      (reference "U1") (unit 1) (value "TPS61093") (footprint "Package_SON:WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/b6b159ec-f490-4e48-9fab-84671c0f93a0"
       (reference "U2") (unit 1) (value "HT75xx-1-SOT89") (footprint "Package_TO_SOT_SMD:SOT-89-3")
