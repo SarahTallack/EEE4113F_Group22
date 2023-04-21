@@ -1,3 +1,27 @@
+21/04/2023
+-mechanical design of scale (Khavish) - try different designs and see which one gives the best results
+-battery monitoring, 5V regulator cheaper + testing procedures for PCB
+-casing of pcb + batteries + micro
+	-insulated wooden box
+-mAh needed for raspberry pi
+-better communication between submodules
+-move off whatsapp group and start talking on teams
+----------
+-how does each submodule interface with other submodules?
+----------
+
+REPORT
+----------------------------------
+-10 to 15 pages each
+intro
+design considerations
+final design
+testing
+conclusions and recommendations
+----------------------------------
+
+
+14/04/2023
 What you considered, why you considered it
 Choices that you've made
 Document all design choices for report
