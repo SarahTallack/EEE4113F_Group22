@@ -221,8 +221,8 @@
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/66bd812a-12cd-4ebe-9450-84df9efd8484"
       (reference "D4") (unit 1) (value "Diode") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/37fb92a3-23dd-49be-a90e-8b9825c7c06b"
-      (reference "J2") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    (path "/981e87c2-b7df-4e8d-bf8b-91f3858a9d6f/dce4cb4a-7c56-4ad0-8ed1-85906af659c4"
+      (reference "J1") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/ac72557a-1fad-42e3-84ea-dcee28a88927"
       (reference "J3") (unit 1) (value "USB_Micro_B_Female_Connector") (footprint "SarahFootprints:C404969_Micro_USB")
@@ -336,7 +336,7 @@
       (reference "TP7") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/f8d00e5c-bc66-4ba7-b7ab-0d55e706d188"
-      (reference "U1") (unit 1) (value "TPS63030DSKR") (footprint "Package_SON:WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm")
+      (reference "U1") (unit 1) (value "TPS61093") (footprint "Package_SON:WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm")
     )
     (path "/ba90ddbb-a325-41f6-b0d8-c98df51ea380/b6b159ec-f490-4e48-9fab-84671c0f93a0"
       (reference "U2") (unit 1) (value "HT75xx-1-SOT89") (footprint "Package_TO_SOT_SMD:SOT-89-3")
